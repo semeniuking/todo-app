@@ -1,0 +1,30 @@
+.inputTodo {
+  padding: 4px 0 5px;
+  border: 0;
+  background: none;
+  height: 30px;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 400;
+  margin: 0;
+  -webkit-tap-highlight-color: transparent;
+  display: block;
+  min-width: 0;
+  width: 100%;
+  outline: none;
+  border-bottom: 1px solid #3D82EB;
+
+  &::placeholder {
+    transition: opacity 0.1s ease;
+  }
+
+  &:hover, &:focus-within, &:focus {
+    border-bottom: 2px solid #3D82EB;
+  }
+
+  &:focus-within, &:focus {
+    &::placeholder {
+      opacity: 0;
+    }
+  }
+}

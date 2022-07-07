@@ -1,0 +1,17 @@
+@import "../../assets/scss/variables";
+
+
+.ListItem {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: auto;
+
+  &__title {
+    margin-left: 30px;
+  }
+
+  &__remove {
+    margin-left: auto!important;
+  }
+}

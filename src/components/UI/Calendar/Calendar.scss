@@ -1,0 +1,58 @@
+@import "../../../assets/scss/variables";
+
+$CalendarSize: 48px;
+@media (max-width: $md3 + px) {
+  $CalendarSize: 32px;
+}
+
+@media (max-width: $md4 + px) {
+  $CalendarSize: 18px;
+}
+
+.Calendar {
+  display: flex;
+  align-items: center;
+  
+  &__icon {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    max-width: $CalendarSize;
+    max-height: $CalendarSize;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__month {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $primaryColor;
+    border: 1px solid #3D82EB;
+    border-radius: 4px 4px 0 0;
+    font-size: calc($CalendarSize / 4);
+    font-weight: 700;
+    color: #fff;
+    height: calc($CalendarSize / 2);
+    width: $CalendarSize;
+  }
+
+  &__day {
+    font-size: calc($CalendarSize / 3);
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc($CalendarSize / 2);
+    border: 2px solid $primaryColor;
+    border-radius: 0 0 4px 4px;
+  }
+
+  &__title{
+    font-size: 24px;
+    font-weight: 700;
+    padding-left: 30px;
+  }
+}
